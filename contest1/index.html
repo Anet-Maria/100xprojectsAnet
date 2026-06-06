@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>con1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(176, 176, 235);">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: rgb(75, 75, 157);">
+
+        <span style="display: flex; gap: 10px; align-items: center;">
+            LOGO
+            <input type="text" placeholder="Search">
+        </span>
+
+        <span>
+            <a href="#" style="color: white; font-size: 20px; text-decoration: none; margin-right: 20px;">About
+                Us</a>
+            <a href="#" style="color: white; font-size: 20px; text-decoration: none; margin-right: 20px;">Contact</a>
+            <a href="#" style="color: white; font-size: 20px; text-decoration: none; margin-right: 20px;">Sign Up</a>
+            <a href="#" style="color: white; font-size: 20px; text-decoration: none; margin-right: 20px;">Login</a>
+        </span>
+
+    </div>
+
+    <br>
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 30px;">
+
+        <!-- LEFT SIDE -->
+        <div class="left-side">
+            <h3 id="tot">Total items: 5</h3>
+        </div>
+
+        <!-- CENTER SIDE -->
+        <div class="center-side">
+
+            <div class="procard">
+                <div>IMAGE1</div>
+                <span>Name 1</span>
+                <span> ₹100 </span>
+                <br><br>
+                <button onclick="sum('Name 1',100)">+</button>
+            </div>
+
+            <div class="procard">
+                <div>IMAGE2</div>
+                <span>Name 2</span>
+                <span> ₹200 </span>
+                <br><br>
+                <button onclick="sum('Name 2',200)">+</button>
+            </div>
+
+            <div class="procard">
+                <div>IMAGE3</div>
+                <span>Name 3</span>
+                <span> ₹300 </span>
+                <br><br>
+                <button onclick="sum('Name 3',300)">+</button>
+            </div>
+
+            <div class="procard">
+                <div>IMAGE4</div>
+                <span>Name 4</span>
+                <span> ₹400 </span>
+                <br><br>
+                <button onclick="sum('Name 4',400)">+</button>
+            </div>
+
+            <div class="procard">
+                <div>IMAGE5</div>
+                <span>Name 5</span>
+                <span> ₹500 </span>
+                <br><br>
+                <button onclick="sum('Name 5',500)">+</button>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-side">
+
+            <div id="itms">
+                Added items: 0
+            </div>
+
+            <br>
+
+            <div id="itml">
+                <strong>Items List:</strong>
+            </div>
+
+            <br>
+
+            <div id="pr">
+                Total Price: ₹0
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
